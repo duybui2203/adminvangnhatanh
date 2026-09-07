@@ -59,21 +59,41 @@ async function phuquy() {
   return { buy: perChiVndToLuongK(num(m[1])), sell: perChiVndToLuongK(num(m[2])) };
 }
 
+// ---- Nguồn 0 (chính): bảng giá trên 24h.com.vn (tổng hợp giavang.net, pnj, baotinmanhhai) – có cả giá hôm qua
+const strip = (t) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/gi, 'd').toLowerCase().replace(/\s+/g, ' ').trim();
+async function h24() {
+  const h = decode(await get('https://www.24h.com.vn/gia-vang-hom-nay-c425.html', { headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36', Accept: 'text/html' } }));
+  const tbl = h.match(/<table class="gia-vang-search-data-table">([\s\S]*?)<\/table>/);
+  if (!tbl) throw new Error('table not found');
+  const out = {};
+  for (const tr of tbl[1].matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
+    const cells = [...tr[1].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)].map((m) => m[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
+    if (cells.length < 5) continue;
+    const v = (c) => { const m = c.match(/\d{1,3}(?:,\d{3})+/); return m ? num(m[0]) : null; };
+    out[strip(cells[0])] = { buy: v(cells[1]), sell: v(cells[2]), prevBuy: v(cells[3]), prevSell: v(cells[4]) };
+  }
+  const head = h.match(/Hôm qua \((\d{2})\/(\d{2})\/(\d{4})\)/);
+  const prevDate = head ? `${head[3]}-${head[2]}-${head[1]}` : null;
+  if (!Object.keys(out).length) throw new Error('no rows');
+  return { rows: out, prevDate };
+}
+
 // Danh sách dòng hiển thị (giữ đúng thứ tự như bảng mẫu)
 const ROWS = [
-  { id: 'sjc',       name: 'SJC',         source: 'pnj.com.vn' },
-  { id: 'doji-hn',   name: 'DOJI HN',     source: 'doji.vn' },
-  { id: 'doji-sg',   name: 'DOJI SG',     source: 'doji.vn' },
-  { id: 'btmh',      name: 'BTMH',        source: 'baotinmanhhai.vn' },
-  { id: 'btmc-vrtl', name: 'BTMC VRTL',   source: 'btmc.vn' },
-  { id: 'btmc-sjc',  name: 'BTMC SJC',    source: 'btmc.vn' },
-  { id: 'phuquy-sjc',name: 'PHÚ QUÝ SJC', source: 'phuquygroup.vn' },
+  { id: 'sjc',       name: 'SJC',         key: 'sjc' },
+  { id: 'doji-hn',   name: 'DOJI HN',     key: 'doji hn' },
+  { id: 'doji-sg',   name: 'DOJI SG',     key: 'doji sg' },
+  { id: 'btmh',      name: 'BTMH',        key: 'btmh' },
+  { id: 'btmc-vrtl', name: 'BTMC VRTL',   key: 'btmc vrtl' },
+  { id: 'btmc-sjc',  name: 'BTMC SJC',    key: 'btmc sjc' },
+  { id: 'phuquy-sjc',name: 'PHÚ QUÝ SJC', key: 'phu quy sjc' },
 ];
+const FALLBACK_SOURCE = { 'sjc': 'pnj.com.vn', 'doji-hn': 'doji.vn', 'doji-sg': 'doji.vn', 'btmh': 'baotinmanhhai.vn', 'btmc-vrtl': 'btmc.vn', 'btmc-sjc': 'btmc.vn', 'phuquy-sjc': 'phuquygroup.vn' };
 
 async function safe(label, fn) { try { return await fn(); } catch (e) { console.warn(`[warn] ${label}: ${e.message}`); return null; } }
 
-const [p, d, b, mh, pq] = await Promise.all([safe('pnj', pnj), safe('doji', doji), safe('btmc', btmc), safe('btmh', btmh), safe('phuquy', phuquy)]);
-const fresh = {
+const [h, p, d, b, mh, pq] = await Promise.all([safe('24h', h24), safe('pnj', pnj), safe('doji', doji), safe('btmc', btmc), safe('btmh', btmh), safe('phuquy', phuquy)]);
+const fallback = {
   'sjc': p || b?.sjc || null,
   'doji-hn': d?.hn || null,
   'doji-sg': d?.hcm || d?.hn || null,
@@ -89,18 +109,20 @@ try { prev = JSON.parse(await readFile('data/prices/latest.json', 'utf8')); } ca
 const prevMap = Object.fromEntries((prev?.rows || []).map((r) => [r.id, r]));
 
 const now = new Date();
-const rows = ROWS.map((r) => {
-  const f = fresh[r.id];
-  if (f && f.buy && f.sell) return { ...r, buy: f.buy, sell: f.sell, time: now.toISOString(), stale: false };
+const rows = ROWS.map(({ key, ...r }) => {
+  const m = h?.rows?.[key];                                  // ưu tiên 24h.com.vn (khớp bảng người dùng xem)
+  if (m && m.buy && m.sell) return { ...r, source: '24h.com.vn', buy: m.buy, sell: m.sell, prevBuy: m.prevBuy, prevSell: m.prevSell, time: now.toISOString(), stale: false };
+  const f = fallback[r.id];                                  // dự phòng: API/website của từng hãng
   const o = prevMap[r.id];
-  if (o && o.buy && o.sell) return { ...r, buy: o.buy, sell: o.sell, time: o.time, stale: true };
-  return { ...r, buy: null, sell: null, time: null, stale: true };
+  if (f && f.buy && f.sell) return { ...r, source: FALLBACK_SOURCE[r.id], buy: f.buy, sell: f.sell, prevBuy: o?.prevBuy ?? null, prevSell: o?.prevSell ?? null, time: now.toISOString(), stale: false };
+  if (o && o.buy && o.sell) return { ...r, source: o.source, buy: o.buy, sell: o.sell, prevBuy: o.prevBuy ?? null, prevSell: o.prevSell ?? null, time: o.time, stale: true };
+  return { ...r, source: FALLBACK_SOURCE[r.id], buy: null, sell: null, prevBuy: null, prevSell: null, time: null, stale: true };
 });
 
 const vnDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Ho_Chi_Minh', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now); // YYYY-MM-DD
-const out = { unit: 'nghìn đồng/lượng', updatedAt: now.toISOString(), date: vnDate, rows };
+const out = { unit: 'nghìn đồng/lượng', updatedAt: now.toISOString(), date: vnDate, prevDate: h?.prevDate || prev?.prevDate || null, rows };
 
 await mkdir('data/prices/history', { recursive: true });
 await writeFile('data/prices/latest.json', JSON.stringify(out, null, 2) + '\n');
 await writeFile(`data/prices/history/${vnDate}.json`, JSON.stringify(out, null, 2) + '\n');
-console.table(rows.map((r) => ({ name: r.name, buy: r.buy, sell: r.sell, stale: r.stale })));
+console.table(rows.map((r) => ({ name: r.name, buy: r.buy, sell: r.sell, prevBuy: r.prevBuy, prevSell: r.prevSell, source: r.source, stale: r.stale })));
