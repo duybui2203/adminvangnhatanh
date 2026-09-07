@@ -1,40 +1,40 @@
 {
   "unit": "nghìn đồng/lượng",
-  "updatedAt": "2026-09-07T19:08:45.537Z",
+  "updatedAt": "2026-09-07T22:00:22.772Z",
   "date": "2026-09-08",
   "prevDate": "2026-09-07",
   "rows": [
     {
       "id": "sjc",
       "name": "SJC",
-      "source": "24h.com.vn",
+      "source": "pnj.com.vn",
       "buy": 143500,
       "sell": 146500,
       "prevBuy": 143500,
       "prevSell": 146500,
-      "time": "2026-09-07T19:08:45.537Z",
+      "time": "2026-09-07T22:00:22.772Z",
       "stale": false
     },
     {
       "id": "doji-hn",
       "name": "DOJI HN",
-      "source": "24h.com.vn",
-      "buy": 143500,
-      "sell": 146500,
+      "source": "doji.vn",
+      "buy": 145500,
+      "sell": 148500,
       "prevBuy": 143500,
       "prevSell": 146500,
-      "time": "2026-09-07T19:08:45.537Z",
+      "time": "2026-09-07T22:00:22.772Z",
       "stale": false
     },
     {
       "id": "doji-sg",
       "name": "DOJI SG",
-      "source": "24h.com.vn",
-      "buy": 143500,
-      "sell": 146500,
+      "source": "doji.vn",
+      "buy": 145500,
+      "sell": 148500,
       "prevBuy": 143500,
       "prevSell": 146500,
-      "time": "2026-09-07T19:08:45.537Z",
+      "time": "2026-09-07T22:00:22.772Z",
       "stale": false
     },
     {
@@ -46,7 +46,7 @@
       "prevBuy": 144600,
       "prevSell": 148600,
       "time": "2026-09-07T19:08:45.537Z",
-      "stale": false
+      "stale": true
     },
     {
       "id": "btmc-vrtl",
@@ -57,7 +57,7 @@
       "prevBuy": 144600,
       "prevSell": 148600,
       "time": "2026-09-07T19:08:45.537Z",
-      "stale": false
+      "stale": true
     },
     {
       "id": "btmc-sjc",
@@ -68,17 +68,17 @@
       "prevBuy": 143500,
       "prevSell": 146500,
       "time": "2026-09-07T19:08:45.537Z",
-      "stale": false
+      "stale": true
     },
     {
       "id": "phuquy-sjc",
       "name": "PHÚ QUÝ SJC",
-      "source": "24h.com.vn",
+      "source": "phuquygroup.vn",
       "buy": 143500,
       "sell": 146500,
       "prevBuy": 143500,
       "prevSell": 146500,
-      "time": "2026-09-07T19:08:45.537Z",
+      "time": "2026-09-07T22:00:22.772Z",
       "stale": false
     }
   ]
