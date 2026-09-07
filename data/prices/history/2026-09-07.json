@@ -1,6 +1,6 @@
 {
   "unit": "nghìn đồng/lượng",
-  "updatedAt": "2026-09-07T09:07:48.380Z",
+  "updatedAt": "2026-09-07T15:02:59.802Z",
   "date": "2026-09-07",
   "prevDate": "2026-09-06",
   "rows": [
@@ -12,7 +12,7 @@
       "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T09:07:48.380Z",
+      "time": "2026-09-07T15:02:59.802Z",
       "stale": false
     },
     {
@@ -23,7 +23,7 @@
       "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T09:07:48.380Z",
+      "time": "2026-09-07T15:02:59.802Z",
       "stale": false
     },
     {
@@ -34,40 +34,40 @@
       "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T09:07:48.380Z",
+      "time": "2026-09-07T15:02:59.802Z",
       "stale": false
     },
     {
       "id": "btmh",
       "name": "BTMH",
       "source": "24h.com.vn",
-      "buy": 145100,
-      "sell": 149100,
+      "buy": 144600,
+      "sell": 148600,
       "prevBuy": 145500,
       "prevSell": 149500,
-      "time": "2026-09-07T09:07:48.380Z",
+      "time": "2026-09-07T15:02:59.802Z",
       "stale": false
     },
     {
       "id": "btmc-vrtl",
       "name": "BTMC VRTL",
       "source": "24h.com.vn",
-      "buy": 145100,
-      "sell": 149100,
+      "buy": 144600,
+      "sell": 148600,
       "prevBuy": 145800,
       "prevSell": 149800,
-      "time": "2026-09-07T09:07:48.380Z",
+      "time": "2026-09-07T15:02:59.802Z",
       "stale": false
     },
     {
       "id": "btmc-sjc",
       "name": "BTMC SJC",
       "source": "24h.com.vn",
-      "buy": 144000,
-      "sell": 147000,
+      "buy": 143500,
+      "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T09:07:48.380Z",
+      "time": "2026-09-07T15:02:59.802Z",
       "stale": false
     },
     {
@@ -78,7 +78,7 @@
       "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T09:07:48.380Z",
+      "time": "2026-09-07T15:02:59.802Z",
       "stale": false
     }
   ]
