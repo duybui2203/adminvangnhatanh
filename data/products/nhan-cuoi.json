@@ -1,5 +1,35 @@
 [
-  { "id": "nc-001", "name": "Cặp nhẫn cưới trơn 24K", "price": 28600000, "image": "images/products/nhan-cuoi/placeholder-1.svg", "gold": "Vàng 24K (9999)", "weight": "2 chỉ / cặp", "desc": "Mẫu trơn truyền thống, khắc tên miễn phí.", "badge": "Bán chạy", "visible": true },
-  { "id": "nc-002", "name": "Cặp nhẫn cưới đính đá 18K", "price": 14900000, "image": "images/products/nhan-cuoi/placeholder-2.svg", "gold": "Vàng 18K (750)", "weight": "3 chỉ / cặp", "desc": "Nhẫn nữ đính đá, nhẫn nam vân xước hiện đại.", "badge": "", "visible": true },
-  { "id": "nc-003", "name": "Cặp nhẫn cưới vàng trắng", "price": null, "image": "images/products/nhan-cuoi/placeholder-3.svg", "gold": "Vàng trắng 18K", "weight": "Theo yêu cầu", "desc": "Thiết kế riêng theo ý tưởng của cặp đôi.", "badge": "", "visible": true }
+  {
+    "id": "nc-002",
+    "name": "Cặp nhẫn cưới đính đá 18K",
+    "price": 14900000,
+    "image": "images/products/nhan-cuoi/placeholder-2.svg",
+    "gold": "Vàng 18K (750)",
+    "weight": "3 chỉ / cặp",
+    "desc": "Nhẫn nữ đính đá, nhẫn nam vân xước hiện đại.",
+    "badge": "",
+    "visible": true
+  },
+  {
+    "id": "nc-001",
+    "name": "Cặp nhẫn cưới trơn 24K",
+    "price": 28600000,
+    "image": "images/products/nhan-cuoi/placeholder-1.svg",
+    "gold": "Vàng 24K (9999)",
+    "weight": "2 chỉ / cặp",
+    "desc": "Mẫu trơn truyền thống, khắc tên miễn phí.",
+    "badge": "Bán chạy",
+    "visible": true
+  },
+  {
+    "id": "nc-003",
+    "name": "Cặp nhẫn cưới vàng trắng",
+    "price": null,
+    "image": "images/products/nhan-cuoi/placeholder-3.svg",
+    "gold": "Vàng trắng 18K",
+    "weight": "Theo yêu cầu",
+    "desc": "Thiết kế riêng theo ý tưởng của cặp đôi.",
+    "badge": "",
+    "visible": true
+  }
 ]
