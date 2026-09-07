@@ -1,0 +1,7 @@
+[
+  { "id": "nhan", "name": "Nhẫn", "subtitle": "Tinh tế trong từng đường nét", "badge": "", "banner": "images/categories/nhan/banner.svg", "icon": "images/categories/nhan/icon.svg", "visible": true },
+  { "id": "day-chuyen", "name": "Dây chuyền", "subtitle": "Điểm nhấn sang trọng", "badge": "", "banner": "images/categories/day-chuyen/banner.svg", "icon": "images/categories/day-chuyen/icon.svg", "visible": true },
+  { "id": "hoa-tai", "name": "Hoa tai", "subtitle": "Rạng rỡ mỗi ngày", "badge": "Mới", "banner": "images/categories/hoa-tai/banner.svg", "icon": "images/categories/hoa-tai/icon.svg", "visible": true },
+  { "id": "nhan-cuoi", "name": "Nhẫn cưới", "subtitle": "Sản phẩm bán chạy", "badge": "Bán chạy", "banner": "images/categories/nhan-cuoi/banner.svg", "icon": "images/categories/nhan-cuoi/icon.svg", "visible": true },
+  { "id": "ngoc", "name": "Ngọc", "subtitle": "Phong thủy & may mắn", "badge": "", "banner": "images/categories/ngoc/banner.svg", "icon": "images/categories/ngoc/icon.svg", "visible": true }
+]

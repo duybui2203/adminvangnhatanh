@@ -1,0 +1,4 @@
+[
+  { "id": "ngoc-001", "name": "Mặt dây Phật Bản Mệnh ngọc bọc vàng", "price": 4600000, "image": "images/products/ngoc/placeholder-1.svg", "gold": "Ngọc cẩm thạch, bọc vàng 18K", "weight": "", "desc": "Hộ mệnh theo tuổi, bọc viền vàng tinh xảo.", "badge": "", "visible": true },
+  { "id": "ngoc-002", "name": "Vòng tay ngọc bích", "price": null, "image": "images/products/ngoc/placeholder-2.svg", "gold": "Ngọc bích tự nhiên", "weight": "", "desc": "Giá tùy theo chất ngọc, liên hệ để được tư vấn.", "badge": "", "visible": true }
+]

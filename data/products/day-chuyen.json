@@ -1,0 +1,5 @@
+[
+  { "id": "dc-001", "name": "Dây chuyền mắt xích 24K", "price": 32500000, "image": "images/products/day-chuyen/placeholder-1.svg", "gold": "Vàng 24K (9999)", "weight": "2 chỉ", "desc": "Kiểu dáng cổ điển, độ bền cao.", "badge": "", "visible": true },
+  { "id": "dc-002", "name": "Dây chuyền nữ mặt trái tim 18K", "price": 8900000, "image": "images/products/day-chuyen/placeholder-2.svg", "gold": "Vàng 18K (750)", "weight": "2.2 chỉ", "desc": "Mặt trái tim đính đá, dây mảnh thanh lịch.", "badge": "Bán chạy", "visible": true },
+  { "id": "dc-003", "name": "Dây chuyền nam bản to", "price": null, "image": "images/products/day-chuyen/placeholder-3.svg", "gold": "Vàng 18K (610)", "weight": "Theo yêu cầu", "desc": "Nhận đặt theo trọng lượng khách yêu cầu.", "badge": "", "visible": true }
+]

@@ -1,0 +1,5 @@
+[
+  { "id": "nhan-001", "name": "Nhẫn trơn 9999 – 1 chỉ", "price": 15200000, "image": "images/products/nhan/placeholder-1.svg", "gold": "Vàng 24K (9999)", "weight": "1 chỉ", "desc": "Nhẫn tròn trơn ép vỉ, tích trữ và làm quà tặng.", "badge": "", "visible": true },
+  { "id": "nhan-002", "name": "Nhẫn nữ đính đá 18K", "price": 6850000, "image": "images/products/nhan/placeholder-2.svg", "gold": "Vàng 18K (750)", "weight": "1.8 chỉ", "desc": "Thiết kế thanh mảnh, đính đá CZ lấp lánh.", "badge": "Mới", "visible": true },
+  { "id": "nhan-003", "name": "Nhẫn nam mặt đá phong thủy", "price": null, "image": "images/products/nhan/placeholder-3.svg", "gold": "Vàng 18K (610)", "weight": "3.5 chỉ", "desc": "Mặt đá tự nhiên, chế tác theo yêu cầu.", "badge": "", "visible": true }
+]

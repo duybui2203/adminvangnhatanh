@@ -1,0 +1,4 @@
+[
+  { "id": "ht-001", "name": "Hoa tai tròn 18K", "price": 3200000, "image": "images/products/hoa-tai/placeholder-1.svg", "gold": "Vàng 18K (750)", "weight": "0.8 chỉ", "desc": "Kiểu tròn cơ bản, phù hợp mọi lứa tuổi.", "badge": "", "visible": true },
+  { "id": "ht-002", "name": "Hoa tai đính đá dáng dài", "price": 5400000, "image": "images/products/hoa-tai/placeholder-2.svg", "gold": "Vàng 18K (750)", "weight": "1.3 chỉ", "desc": "Dáng dài thanh thoát, đính đá CZ.", "badge": "Mới", "visible": true }
+]

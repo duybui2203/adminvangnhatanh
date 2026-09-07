@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<defs>
+ <radialGradient id="glow" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#3a2f12"/><stop offset="55%" stop-color="#16130c"/><stop offset="100%" stop-color="#0a0908"/></radialGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F7E7A8"/><stop offset="45%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8C6A1B"/></linearGradient>
+ <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#D4AF37" opacity="0.15"/></pattern>
+</defs>
+<rect width="1200" height="900" fill="url(#glow)"/>
+<rect width="1200" height="900" fill="url(#dots)"/>
+<circle cx="600.0" cy="414.0" r="270.0" fill="none" stroke="url(#gold)" stroke-width="3" opacity="0.6"/>
+<circle cx="600.0" cy="414.0" r="234.0" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.35"/>
+<g transform="translate(456.0,270.0) scale(4.5)" fill="none" stroke="url(#gold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6l18 14-18 38L14 20z"/><path d="M14 20h36"/><path d="M22 20l10 38 10-38"/><path d="M22 20l10-14 10 14"/></g>
+</svg>

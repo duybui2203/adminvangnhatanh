@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+<defs>
+ <radialGradient id="g" cx="50%" cy="40%" r="65%"><stop offset="0%" stop-color="#33261a"/><stop offset="100%" stop-color="#0c0b09"/></radialGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F7E7A8"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8C6A1B"/></linearGradient>
+</defs>
+<rect width="900" height="900" fill="url(#g)"/>
+<g transform="translate(252.0,252.0) scale(6.1875)" fill="none" stroke="url(#gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"><path d="M32 6l18 14-18 38L14 20z"/><path d="M14 20h36"/><path d="M22 20l10 38 10-38"/><path d="M22 20l10-14 10 14"/></g>
+<text x="450.0" y="810.0" text-anchor="middle" font-family="Georgia, serif" font-size="31.500000000000004" letter-spacing="5" fill="#B99A4A">ẢNH MẪU · VÀNG NHẬT ANH</text>
+</svg>
