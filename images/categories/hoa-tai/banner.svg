@@ -1,12 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
 <defs>
- <radialGradient id="glow" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#3a2f12"/><stop offset="55%" stop-color="#16130c"/><stop offset="100%" stop-color="#0a0908"/></radialGradient>
- <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F7E7A8"/><stop offset="45%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8C6A1B"/></linearGradient>
- <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#D4AF37" opacity="0.15"/></pattern>
+ <radialGradient id="bgg" cx="50%" cy="42%" r="65%"><stop offset="0%" stop-color="#fffdf5"/><stop offset="60%" stop-color="#f6ecd2"/><stop offset="100%" stop-color="#e9d9ad"/></radialGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e9cf74"/><stop offset="45%" stop-color="#c9a227"/><stop offset="100%" stop-color="#8f6f1c"/></linearGradient>
+ <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#c9a227" opacity="0.22"/></pattern>
 </defs>
-<rect width="1200" height="900" fill="url(#glow)"/>
+<rect width="1200" height="900" fill="url(#bgg)"/>
 <rect width="1200" height="900" fill="url(#dots)"/>
-<circle cx="600.0" cy="414.0" r="270.0" fill="none" stroke="url(#gold)" stroke-width="3" opacity="0.6"/>
-<circle cx="600.0" cy="414.0" r="234.0" fill="none" stroke="#D4AF37" stroke-width="1" opacity="0.35"/>
+<circle cx="600.0" cy="414.0" r="270.0" fill="#fff" opacity="0.55"/>
+<circle cx="600.0" cy="414.0" r="270.0" fill="none" stroke="url(#gold)" stroke-width="3" opacity="0.8"/>
+<circle cx="600.0" cy="414.0" r="234.0" fill="none" stroke="#c9a227" stroke-width="1" opacity="0.45"/>
 <g transform="translate(456.0,270.0) scale(4.5)" fill="none" stroke="url(#gold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8v6"/><path d="M44 8v6"/><circle cx="20" cy="18" r="4"/><circle cx="44" cy="18" r="4"/><path d="M20 22c-8 10-8 20 0 28 8-8 8-18 0-28z"/><path d="M44 22c-8 10-8 20 0 28 8-8 8-18 0-28z"/></g>
 </svg>
