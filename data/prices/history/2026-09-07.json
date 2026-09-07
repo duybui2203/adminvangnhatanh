@@ -1,6 +1,6 @@
 {
   "unit": "nghìn đồng/lượng",
-  "updatedAt": "2026-09-07T06:12:18.303Z",
+  "updatedAt": "2026-09-07T09:07:48.380Z",
   "date": "2026-09-07",
   "prevDate": "2026-09-06",
   "rows": [
@@ -8,55 +8,55 @@
       "id": "sjc",
       "name": "SJC",
       "source": "24h.com.vn",
-      "buy": 144000,
-      "sell": 147000,
+      "buy": 143500,
+      "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T06:12:18.303Z",
+      "time": "2026-09-07T09:07:48.380Z",
       "stale": false
     },
     {
       "id": "doji-hn",
       "name": "DOJI HN",
       "source": "24h.com.vn",
-      "buy": 144000,
-      "sell": 147000,
+      "buy": 143500,
+      "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T06:12:18.303Z",
+      "time": "2026-09-07T09:07:48.380Z",
       "stale": false
     },
     {
       "id": "doji-sg",
       "name": "DOJI SG",
       "source": "24h.com.vn",
-      "buy": 144000,
-      "sell": 147000,
+      "buy": 143500,
+      "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T06:12:18.303Z",
+      "time": "2026-09-07T09:07:48.380Z",
       "stale": false
     },
     {
       "id": "btmh",
       "name": "BTMH",
       "source": "24h.com.vn",
-      "buy": 145300,
-      "sell": 149300,
+      "buy": 145100,
+      "sell": 149100,
       "prevBuy": 145500,
       "prevSell": 149500,
-      "time": "2026-09-07T06:12:18.303Z",
+      "time": "2026-09-07T09:07:48.380Z",
       "stale": false
     },
     {
       "id": "btmc-vrtl",
       "name": "BTMC VRTL",
       "source": "24h.com.vn",
-      "buy": 145300,
-      "sell": 149300,
+      "buy": 145100,
+      "sell": 149100,
       "prevBuy": 145800,
       "prevSell": 149800,
-      "time": "2026-09-07T06:12:18.303Z",
+      "time": "2026-09-07T09:07:48.380Z",
       "stale": false
     },
     {
@@ -67,18 +67,18 @@
       "sell": 147000,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T06:12:18.303Z",
+      "time": "2026-09-07T09:07:48.380Z",
       "stale": false
     },
     {
       "id": "phuquy-sjc",
       "name": "PHÚ QUÝ SJC",
       "source": "24h.com.vn",
-      "buy": 144000,
-      "sell": 147000,
+      "buy": 143500,
+      "sell": 146500,
       "prevBuy": 144600,
       "prevSell": 147600,
-      "time": "2026-09-07T06:12:18.303Z",
+      "time": "2026-09-07T09:07:48.380Z",
       "stale": false
     }
   ]
