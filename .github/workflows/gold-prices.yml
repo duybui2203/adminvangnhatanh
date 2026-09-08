@@ -1,8 +1,9 @@
 name: Cập nhật giá vàng
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"   # mỗi 15 phút (giờ UTC); GitHub có thể chạy trễ vài phút
+  # Đã tắt lịch tự động (bảng giá nhập tay trong admin). Bỏ dấu # hai dòng dưới nếu muốn bật lại.
+  # schedule:
+  #   - cron: "*/15 * * * *"
   workflow_dispatch:          # cho phép bấm "Run workflow" thủ công
 
 permissions:

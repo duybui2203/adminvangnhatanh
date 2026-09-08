@@ -1,6 +1,6 @@
 {
-  "company": "CÔNG TY TNHH VÀNG NHẬT ANH",
-  "brand": "Vàng Nhật Anh",
+  "company": "Doanh nghiệp tư nhân vàng bạc đá quý Nhật Anh",
+  "brand": "Vàng bạc Nhật Anh",
   "slogans": [
     "Giữ trọn giá trị – Sáng mãi niềm tin",
     "Uy tín tạo nên thương hiệu, chất lượng khẳng định giá trị",
@@ -8,22 +8,79 @@
   ],
   "address": "716 Lạc Long Quân, Tây Hồ, Hà Nội",
   "mapUrl": "https://www.google.com/maps/search/?api=1&query=716+L%E1%BA%A1c+Long+Qu%C3%A2n%2C+T%C3%A2y+H%E1%BB%93%2C+H%C3%A0+N%E1%BB%99i",
-  "phone": "0862475163",
-  "zalo": "0862475163",
+  "phone": "0817628686",
+  "zalo": "0817628686",
   "hours": "Mở cửa 24/7",
   "facebook": "",
-  "ownPrice": {
-    "name": "Vàng Nhật Anh",
-    "buy": 144000,
-    "sell": 147000,
-    "prevBuy": 144600,
-    "prevSell": 147600,
-    "updatedAt": "2026-09-07T02:30:00.000Z"
-  },
   "commitments": [
-    { "icon": "shield", "title": "Vàng chuẩn tuổi", "text": "Cam kết đúng hàm lượng, có kiểm định rõ ràng." },
-    { "icon": "refresh", "title": "Thu đổi giá cao", "text": "Thu mua, đổi cũ lấy mới với giá tốt nhất thị trường." },
-    { "icon": "gem", "title": "Chế tác tinh xảo", "text": "Mẫu mã đa dạng, gia công tỉ mỉ bởi thợ kim hoàn lành nghề." },
-    { "icon": "heart", "title": "Tận tâm phục vụ", "text": "Tư vấn tận tình, bảo hành trọn đời sản phẩm." }
-  ]
+    {
+      "icon": "shield",
+      "title": "Vàng chuẩn tuổi",
+      "text": "Cam kết đúng hàm lượng, có kiểm định rõ ràng."
+    },
+    {
+      "icon": "refresh",
+      "title": "Thu đổi giá cao",
+      "text": "Thu mua, đổi cũ lấy mới với giá tốt nhất thị trường."
+    },
+    {
+      "icon": "gem",
+      "title": "Chế tác tinh xảo",
+      "text": "Mẫu mã đa dạng, gia công tỉ mỉ bởi thợ kim hoàn lành nghề."
+    },
+    {
+      "icon": "heart",
+      "title": "Tận tâm phục vụ",
+      "text": "Tư vấn tận tình, bảo hành trọn đời sản phẩm."
+    }
+  ],
+  "email": "vangbacnhatanh716@gmail.com",
+  "prices": {
+    "unit": "nghìn đồng/chỉ",
+    "date": "2026-09-07",
+    "prevDate": "2026-09-06",
+    "updatedAt": "2026-09-07T05:00:00.000Z",
+    "rows": [
+      {
+        "id": "nhat-anh",
+        "name": "Vàng Nhật Anh",
+        "note": "Giá tại tiệm",
+        "own": true,
+        "buy": 14400,
+        "sell": 14700,
+        "prevBuy": 14460,
+        "prevSell": 14760
+      },
+      {
+        "id": "btmc",
+        "name": "Vàng BTMC",
+        "note": "",
+        "own": false,
+        "buy": 14560,
+        "sell": 14960,
+        "prevBuy": 14580,
+        "prevSell": 14980
+      },
+      {
+        "id": "nhan-tron-doji",
+        "name": "Nhẫn tròn DOJI",
+        "note": "",
+        "own": false,
+        "buy": 14560,
+        "sell": 14960,
+        "prevBuy": 14580,
+        "prevSell": 14980
+      },
+      {
+        "id": "vang-9999",
+        "name": "Vàng 999.9",
+        "note": "",
+        "own": false,
+        "buy": 13600,
+        "sell": 14000,
+        "prevBuy": 13620,
+        "prevSell": 14020
+      }
+    ]
+  }
 }
