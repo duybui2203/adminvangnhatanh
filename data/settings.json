@@ -38,19 +38,19 @@
   "prices": {
     "title": "VÀNG BẠC NHẬT ANH",
     "unit": "nghìn đồng/chỉ",
-    "date": "2026-09-07",
-    "prevDate": "2026-09-06",
-    "updatedAt": "2026-09-07T05:00:00.000Z",
+    "date": "2026-09-08",
+    "prevDate": "2026-09-07",
+    "updatedAt": "2026-09-08T07:01:30.408Z",
     "rows": [
       {
         "id": "nhat-anh",
         "name": "Vàng Nhật Anh",
         "note": "Giá tại tiệm",
         "own": true,
-        "buy": 14400,
+        "buy": 14500,
         "sell": 14700,
-        "prevBuy": 14460,
-        "prevSell": 14760
+        "prevBuy": 14400,
+        "prevSell": 14700
       },
       {
         "id": "btmc",
@@ -59,8 +59,8 @@
         "own": false,
         "buy": 14560,
         "sell": 14960,
-        "prevBuy": 14580,
-        "prevSell": 14980
+        "prevBuy": 14560,
+        "prevSell": 14960
       },
       {
         "id": "nhan-tron-doji",
@@ -69,8 +69,8 @@
         "own": false,
         "buy": 14560,
         "sell": 14960,
-        "prevBuy": 14580,
-        "prevSell": 14980
+        "prevBuy": 14560,
+        "prevSell": 14960
       },
       {
         "id": "vang-9999",
@@ -79,8 +79,8 @@
         "own": false,
         "buy": 13600,
         "sell": 14000,
-        "prevBuy": 13620,
-        "prevSell": 14020
+        "prevBuy": 13600,
+        "prevSell": 14000
       }
     ]
   }
