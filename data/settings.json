@@ -53,6 +53,16 @@
         "prevSell": 14700
       },
       {
+        "id": "vang-9999",
+        "name": "Vàng 999.9",
+        "note": "",
+        "own": false,
+        "buy": 13600,
+        "sell": 14000,
+        "prevBuy": 13600,
+        "prevSell": 14000
+      },
+      {
         "id": "btmc",
         "name": "Vàng BTMC",
         "note": "",
@@ -71,16 +81,6 @@
         "sell": 14960,
         "prevBuy": 14560,
         "prevSell": 14960
-      },
-      {
-        "id": "vang-9999",
-        "name": "Vàng 999.9",
-        "note": "",
-        "own": false,
-        "buy": 13600,
-        "sell": 14000,
-        "prevBuy": 13600,
-        "prevSell": 14000
       }
     ]
   }
